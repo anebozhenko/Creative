@@ -1,0 +1,68 @@
+.blog
+	position: relative
+	z-index: -1
+	&__container
+		padding-top: 165px
+		padding-bottom: 110px
+	&__header
+		margin-bottom: 60px
+	&__items
+
+.blog-header
+	text-align: center
+	&__title
+		color: #222
+		font-size: 38px
+		text-transform: uppercase
+		font-family: Sans-serif
+		position: relative
+		margin-bottom: 100px
+		&::after
+			line-height: 0
+			content: 'B'
+			color: #d7d7d7
+			font-size: 247px
+			position: absolute
+			left: 50%
+			top: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
+	&__sub-title
+		font-size: 30px
+		color: #222
+		font-family: Sans-serif
+
+.blog-items
+	display: flex
+	justify-content: space-between
+	&__item
+		overflow: hidden
+		width: 23%
+		text-align: center
+	&__img
+		height: 280px
+		width: 280px
+		background-repeat: no-repeat
+		background-size: cover
+		background-position: bottom center
+		margin-bottom: 30px
+		&--1
+			background-image: url('../img/blog-1.jpg')
+		&--2
+			background-image: url('../img/blog-2.jpg')
+		&--3
+			background-image: url('../img/blog-3.jpg')
+		&--4
+			background-image: url('../img/blog-4.jpg')
+	&__title
+		color: #11749e
+		font-size: 18px
+		text-transform: uppercase
+		font-weight: 500
+		font-family: Sans-serif
+		margin-bottom: 10px
+	&__text
+		font-size: 15px
+		color: #222
+		line-height: 24px
+		font-family: Sans-serif

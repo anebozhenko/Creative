@@ -1,0 +1,68 @@
+.header
+	position: absolute
+	z-index: 1
+	width: 100%
+	border-bottom: 1px solid #7e7e7e
+	&__container
+		min-height: 115px
+		display: flex
+		align-items: center
+		justify-content: space-between
+	&__logo
+	&__nav
+	&__social
+
+.logo
+
+.menu
+	min-height: inherit
+	display: flex
+	justify-content: center
+	align-items: center
+	&__nav
+		margin-right: 55px
+	&__social
+
+.nav
+	min-height: inherit
+	&__list
+		min-height: inherit
+		display: flex
+		align-items: center
+	&__item
+		min-height: inherit
+		display: flex
+		align-items: center
+		position: relative
+		&:not(:last-child)
+			margin-right: 50px
+	&__link
+		font-size: 20px
+		color: #fff
+		font-family: Sans-serif
+		&::after
+			content: ''
+			display: block
+			width: 110%
+			height: 0
+			background-color: #11749e
+			position: absolute
+			left: -5%
+			bottom: 0
+			transition: height .2s
+		&:hover
+			&::after
+				height: 6px
+
+.social
+	display: flex
+	&__item
+		&:not(:last-child)
+			margin-right: 25px
+	&__img
+		fill: #f5f5f5
+		width: 22px
+		height: 22px
+		transition: fill .2s
+		&:hover
+			fill: #11749e

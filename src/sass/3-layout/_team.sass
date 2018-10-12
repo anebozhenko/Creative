@@ -1,0 +1,74 @@
+.team
+	&__container
+		padding-top: 140px
+		padding-bottom: 100px
+	&__header
+	&__items
+
+.team-header
+	text-align: center
+	margin-bottom: 50px
+	&__title
+		font-size: 38px
+		color: #222
+		text-transform: uppercase
+		font-family: Sans-serif
+		position: relative
+		margin-bottom: 120px
+		&::after
+			content: 'T'
+			font-size: 247px
+			color: #d7d7d7
+			position: absolute
+			top: 50%
+			left: 50%
+			transform: translate(-50%, -50%)
+			z-index: -1
+	&__sub-title
+		font-size: 30px
+		color: #222
+		font-family: Sans-serif
+
+.team-items
+	display: flex
+	justify-content: space-between
+	&__item
+		position: relative
+		width: 24%
+		height: 415px
+		background-position: center center
+		background-size: cover
+		&--1
+			background-image: url('../img/john.jpg')
+		&--2
+			background-image: url('../img/sansa-1.jpg')
+		&--3
+			background-image: url('../img/david.jpg')
+		&--4
+			background-image: url('../img/sansa-2.jpg')
+	&__info
+		max-width: 220px
+		width: 85%
+		min-height: 80px
+		display: flex
+		flex-direction: column
+		justify-content: center
+		align-items: center
+		text-align: center
+		background-color: #fff
+		position: absolute
+		bottom: -30px
+		left: 50%
+		transform: translateX(-50%)
+	&__name
+		font-size: 20px
+		color: #11749e
+		text-transform: uppercase
+		font-family: Sans-serif
+		font-weight: 600
+		margin-bottom: 10px
+	&__position
+		font-size: 15px
+		color: #000
+		font-family: Sans-serif
+		font-weight: 600

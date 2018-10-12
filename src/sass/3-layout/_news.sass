@@ -1,0 +1,68 @@
+.news
+	background-repeat: no-repeat
+	background-size: 50% 100%
+	&--1
+		background-color: #222
+	&--2
+		background-color: #f3f3f3
+	&__container
+		display: flex
+		min-height: 500px
+	&__info
+	&__photo
+
+.news-info
+	width: 50%
+	&__container
+		display: flex
+		flex-direction: column
+		justify-content: center
+		max-width: 600px
+		width: 95%
+		height: 100%
+		float: right
+		padding-right: 10%
+		&::after
+			content: ''
+			display: table
+			clear: both
+		&--float-right
+			padding-right: 0
+			padding-left: 10%
+			float: left
+	&__header
+		margin-bottom: 30px
+	&__top
+		color: #fff
+		font-family: Sans-serif
+		margin-bottom: 5px
+		&--dark
+			color: #222
+	&__title
+		color: #fff
+		font-family: Sans-serif
+		font-weight: 400
+		&--dark
+			color: #222
+	&__text
+		color: #fff
+		font-family: Sans-serif
+		&--dark
+			color: #222
+	&__p:not(:last-child)
+		margin-bottom: 24px
+
+.news-photo
+	width: 50%
+	min-height: 100%
+	background-repeat: no-repeat
+	background-size: cover
+	&--1
+		background-position: right center
+		background-image: url('../img/section-bg-1.jpg')
+		background-color: #222
+	&--2
+		background-position: left center
+		background-image: url('../img/section-bg-2.jpg')
+		background-color: #f3f3f3
+	&__container
